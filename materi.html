@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Materi — Jaringan Komputer Dasar</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">EduNetwork</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain2">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMain2">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link active" href="materi.html">Materi</a></li>
+        <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="container my-5">
+  <div class="row">
+    <!-- CONTENT -->
+    <div class="col-lg-8">
+
+      <article class="mb-5">
+        <h1 class="fw-bold">Jaringan Komputer Dasar — Materi Lengkap</h1>
+        <p class="text-muted">Materi ini disusun untuk pemula, mencakup teori dan praktik. Baca tiap bagian secara berurutan untuk pemahaman terbaik.</p>
+      </article>
+
+      <!-- Pengertian -->
+      <section id="pengertian" class="mb-4">
+        <h2>1. Pengertian Jaringan Komputer</h2>
+        <p>Jaringan komputer adalah kumpulan dua atau lebih perangkat komputer yang saling terhubung menggunakan media transmisi untuk berbagi data, sumber daya (seperti printer), dan layanan (seperti server). Koneksi bisa bersifat kabel (UTP, fiber optic) atau nirkabel (Wi-Fi).</p>
+        <div class="card bg-light p-3">
+          <strong>Manfaat singkat:</strong>
+          <ul class="mb-0">
+            <li>Berbagi file & sumber daya</li>
+            <li>Kemudahan komunikasi</li>
+            <li>Manajemen terpusat (server)</li>
+            <li>Akses internet bersama</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Komponen -->
+      <section id="komponen" class="mb-4">
+        <h2>2. Komponen Utama Jaringan</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <ul>
+              <li><b>Server</b> — penyedia layanan (web, file, email).</li>
+              <li><b>Client</b> — pengguna layanan (PC, laptop, smartphone).</li>
+              <li><b>Router</b> — menghubungkan jaringan berbeda (mis. LAN ke WAN).</li>
+              <li><b>Switch</b> — menghubungkan perangkat dalam satu jaringan lokal (LAN).</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li><b>Access Point (AP)</b> — menyediakan koneksi nirkabel.</li>
+              <li><b>Modem</b> — mengubah sinyal ISP ke format yang bisa dipakai lokal.</li>
+              <li><b>Media</b> — kabel UTP, coaxial, fiber optic; gelombang radio (Wi-Fi).</li>
+              <li><b>Protokol</b> — aturan komunikasi seperti TCP/IP.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Topologi -->
+      <section id="topologi" class="mb-4">
+        <h2>3. Topologi Jaringan</h2>
+        <p>Topologi menjelaskan struktur koneksi antar perangkat. Contoh umum:</p>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Topologi Star</h5>
+                <p class="card-text">Semua perangkat terhubung ke perangkat pusat (switch/hub). Mudah dipasang dan dikelola; kegagalan satu kabel tidak memengaruhi yang lain.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Topologi Bus</h5>
+                <p class="card-text">Semua perangkat berada pada satu kabel utama. Murah untuk jaringan kecil tetapi sulit skalanya dan rentan pada collision.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Topologi Ring</h5>
+                <p class="card-text">Perangkat tersusun melingkar; data mengalir ke satu arah (atau dua arah pada dual ring).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Topologi Mesh</h5>
+                <p class="card-text">Setiap perangkat dapat terhubung langsung ke perangkat lain — sangat fault-tolerant namun mahal.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- OSI Model -->
+      <section id="osi" class="mb-4">
+        <h2>4. Model OSI dan Fungsi Tiap Layer</h2>
+        <p>Model OSI (Open Systems Interconnection) terdiri dari 7 layer. Ini membantu kita memahami di mana fungsi perangkat/protokol berada.</p>
+
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead class="table-primary">
+              <tr>
+                <th>Layer</th>
+                <th>Nama</th>
+                <th>Fungsi Singkat</th>
+                <th>Contoh Protokol / Perangkat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>7</td><td>Application</td><td>Antarmuka aplikasi pengguna (web, email)</td><td>HTTP, SMTP, FTP</td></tr>
+              <tr><td>6</td><td>Presentation</td><td>Format data, enkripsi</td><td>SSL/TLS</td></tr>
+              <tr><td>5</td><td>Session</td><td>Manajemen sesi komunikasi</td><td>NetBIOS, RPC</td></tr>
+              <tr><td>4</td><td>Transport</td><td>Pengiriman data end-to-end, kontrol kesalahan</td><td>TCP, UDP</td></tr>
+              <tr><td>3</td><td>Network</td><td>Pengalamatan & routing</td><td>IP, Router</td></tr>
+              <tr><td>2</td><td>Data Link</td><td>Transfer frame antar node</td><td>Ethernet, Switch, MAC</td></tr>
+              <tr><td>1</td><td>Physical</td><td>Transmisi bit melalui media</td><td>UTP, Fiber, Kabel</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- TCP/IP Stack -->
+      <section id="tcpip" class="mb-4">
+        <h2>5. TCP/IP Stack (singkat)</h2>
+        <p>Model yang praktis dipakai di Internet — terdiri dari Application, Transport, Internet, dan Link.</p>
+      </section>
+
+      <!-- Alamat IP & Subnetting -->
+      <section id="ip" class="mb-4">
+        <h2>6. Alamat IP & Subnetting Dasar</h2>
+        <p>Alamat IP (IPv4) terdiri dari 32 bit, biasanya ditulis empat oktet desimal (contoh: <code>192.168.1.10</code>). </p>
+
+        <h6>Contoh kelas IP (tradisional):</h6>
+        <ul>
+          <li>Kelas A: 1.0.0.0 – 126.255.255.255 (default subnet mask 255.0.0.0)</li>
+          <li>Kelas B: 128.0.0.0 – 191.255.255.255 (255.255.0.0)</li>
+          <li>Kelas C: 192.0.0.0 – 223.255.255.255 (255.255.255.0)</li>
+        </ul>
+
+        <h6>Subnet mask & CIDR</h6>
+        <p>Contoh: <code>192.168.1.0/24</code> berarti mask <code>255.255.255.0</code> sehingga ada 256 alamat (254 host usable).</p>
+
+        <div class="alert alert-secondary">
+          <strong>Catatan singkat:</strong> Untuk perhitungan subnet lebih jauh, pelajari cara konversi desimal-ke-biner, menghitung host per subnet, dan menentukan network/broadcast address.
+        </div>
+      </section>
+
+      <!-- Perangkat Jaringan -->
+      <section id="perangkat" class="mb-4">
+        <h2>7. Perangkat Jaringan & Fungsinya</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h6>Router</h6>
+            <p>Menghubungkan 2+ jaringan berbeda (routing), bekerja pada Layer 3.</p>
+
+            <h6>Switch</h6>
+            <p>Menghubungkan perangkat dalam LAN, bekerja pada Layer 2 (dan L3 untuk managed switches).</p>
+
+            <h6>Access Point</h6>
+            <p>Menjadi titik akses nirkabel yang menghubungkan perangkat Wi-Fi ke jaringan kabel.</p>
+          </div>
+          <div class="col-md-6">
+            <h6>Modem</h6>
+            <p>Mentranslasikan sinyal ISP (ADSL, cable, fiber) ke format digital untuk jaringan lokal.</p>
+
+            <h6>Firewall</h6>
+            <p>Perangkat lunak atau hardware untuk mengontrol trafik berdasarkan kebijakan keamanan.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Protokol Umum -->
+      <section id="protokol" class="mb-4">
+        <h2>8. Protokol Umum & Peranannya</h2>
+        <ul>
+          <li><b>HTTP / HTTPS</b>: protokol untuk web.</li>
+          <li><b>TCP</b>: koneksi yang andal (handshake, retransmit).</li>
+          <li><b>UDP</b>: koneksi tanpa jaminan (video, VoIP).</li>
+          <li><b>DNS</b>: menerjemahkan nama domain ke IP.</li>
+          <li><b>DHCP</b>: otomatis memberikan alamat IP ke perangkat.</li>
+        </ul>
+      </section>
+
+      <!-- Keamanan Dasar -->
+      <section id="keamanan" class="mb-4">
+        <h2>9. Keamanan Jaringan Dasar</h2>
+        <p>Keamanan penting dari desain hingga operasi. Beberapa langkah awal:</p>
+        <ol>
+          <li>Gunakan password kuat pada perangkat jaringan.</li>
+          <li>Segmentasi jaringan (VLAN) untuk isolasi trafik.</li>
+          <li>Aktifkan firewall & update firmware/perangkat lunak.</li>
+          <li>Gunakan enkripsi (WPA2/WPA3 untuk Wi-Fi, TLS untuk aplikasi).</li>
+          <li>Monitor trafik dan buat log aktivitas.</li>
+        </ol>
+      </section>
+
+      <!-- Praktik Dasar / Lab -->
+      <section id="praktek" class="mb-5">
+        <h2>10. Praktik Dasar (Perintah & Contoh)</h2>
+
+        <h6>Perintah ping (uji konektivitas)</h6>
+        <pre class="p-3 bg-dark text-white rounded"><code>ping 8.8.8.8
+ping google.com</code></pre>
+
+        <h6>Perintah melihat konfigurasi IP</h6>
+        <div class="row">
+          <div class="col-md-6">
+            <p><strong>Windows:</strong></p>
+            <pre class="p-3 bg-dark text-white rounded"><code>ipconfig /all</code></pre>
+          </div>
+          <div class="col-md-6">
+            <p><strong>Linux / macOS:</strong></p>
+            <pre class="p-3 bg-dark text-white rounded"><code>ifconfig
+atau
+ip addr show</code></pre>
+          </div>
+        </div>
+
+        <h6>Traceroute / Tracert (lihat jalur paket)</h6>
+        <pre class="p-3 bg-dark text-white rounded"><code>tracert google.com   (Windows)
+traceroute google.com (Linux/macOS)</code></pre>
+
+        <h6>Contoh konfigurasi singkat (conceptual)</h6>
+        <p>Jika ingin membuat jaringan kecil (kelas lab):</p>
+        <ul>
+          <li>Router: konfigurasi interface WAN (dari ISP) dan LAN (mis. 192.168.10.1/24)</li>
+          <li>Switch: hubungkan PC dan server ke switch</li>
+          <li>Server DHCP: aktifkan untuk mengalokasikan IP otomatis pada subnet 192.168.10.0/24</li>
+        </ul>
+      </section>
+
+      <!-- Contoh Kasus -->
+      <section id="kasus" class="mb-5">
+        <h2>11. Contoh Kasus & Solusi Singkat</h2>
+        <h6>Kasus: Tidak ada koneksi internet padahal kabel terpasang</h6>
+        <ol>
+          <li>Cek lampu indikator modem/router</li>
+          <li>Ping ke gateway (misal 192.168.1.1)</li>
+          <li>Periksa konfigurasi IP (pastikan tidak duplicate)</li>
+          <li>Restart modem/router & device</li>
+        </ol>
+
+        <h6>Kasus: jaringan lambat</h6>
+        <ul>
+          <li>Periksa penggunaan bandwidth (aplikasi intensif seperti streaming)</li>
+          <li>Periksa kualitas sinyal Wi-Fi (ganti kanal jika banyak interferensi)</li>
+          <li>Gunakan QoS untuk prioritas trafik</li>
+        </ul>
+      </section>
+
+      <!-- Penutup dan Sumber -->
+      <section id="lainnya" class="mb-5">
+        <h2>12. Lanjutan & Sumber Belajar</h2>
+        <p>Jika ingin mendalami: pelajari subnetting mendalam, routing protocol (OSPF, BGP), VLAN, switching advanced, serta cybersecurity. Tools latihan: <em>Cisco Packet Tracer</em>, <em>GNS3</em>, atau lab fisik.</p>
+
+        <p><strong>Rekomendasi bacaan/latihan:</strong></p>
+        <ol>
+          <li>Dokumentasi resmi TCP/IP & RFC</li>
+          <li>Materi kursus CCNA (dasar routing & switching)</li>
+          <li>Praktik di lab virtual</li>
+        </ol>
+      </section>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="col-lg-4">
+      <div class="sticky-top" style="top:90px;">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Daftar Isi</h5>
+            <nav class="nav flex-column">
+              <a class="nav-link" href="#pengertian">Pengertian</a>
+              <a class="nav-link" href="#komponen">Komponen</a>
+              <a class="nav-link" href="#topologi">Topologi</a>
+              <a class="nav-link" href="#osi">OSI Model</a>
+              <a class="nav-link" href="#ip">Alamat IP</a>
+              <a class="nav-link" href="#perangkat">Perangkat</a>
+              <a class="nav-link" href="#protokol">Protokol</a>
+              <a class="nav-link" href="#keamanan">Keamanan</a>
+              <a class="nav-link" href="#praktek">Praktik</a>
+              <a class="nav-link" href="#kasus">Kasus</a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h6>Quick Tips</h6>
+            <ul class="mb-0">
+              <li>Selalu catat pengaturan IP sebelum mengubah.</li>
+              <li>Backup konfigurasi perangkat jaringan.</li>
+              <li>Gunakan lab virtual untuk praktek tanpa risiko.</li>
+            </ul>
+            <a href="kontak.html" class="btn btn-sm btn-primary mt-3">Minta Bantuan</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-primary text-white py-4 mt-5">
+  <div class="container d-flex justify-content-between">
+    <div>© 2025 EduNetwork • Materi Jaringan Komputer</div>
+    <div>
+      <a href="index.html" class="text-white text-decoration-none me-3">Beranda</a>
+      <a href="tentang.html" class="text-white text-decoration-none">Tentang</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

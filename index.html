@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jaringan Komputer Dasar — EduNetwork</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">EduNetwork</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="materi.html">Materi</a></li>
+        <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        <li class="nav-item ms-2">
+          <button id="themeToggle" class="btn btn-outline-light btn-sm"><i class="bi bi-moon"></i></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero bg-gradient-primary text-white py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <h1 class="display-5 fw-bold">Jaringan Komputer Dasar</h1>
+        <p class="lead mb-4">Belajar konsep, perangkat, topologi, protokol, hingga praktik dasar jaringan — dikemas jelas dan kekinian.</p>
+        <a href="materi.html" class="btn btn-light btn-lg me-2">Mulai Belajar</a>
+        <a href="kontak.html" class="btn btn-outline-light btn-lg">Hubungi Pengembang</a>
+      </div>
+      <div class="col-lg-5 text-center">
+        <img src="https://i0.wp.com/systemzone.net/wp-content/uploads/2017/02/Computer-Network.jpg?resize=600%2C300&ssl=1" alt="Jaringan" class="img-fluid rounded shadow-lg hero-img">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- KONTEN UTAMA -->
+<main class="py-5">
+  <div class="container">
+
+    <!-- highlight cards -->
+    <div class="row g-4 mb-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Materi Lengkap</h5>
+            <p class="card-text">Pengertian, komponen, topologi, OSI model, protokol, dan banyak contoh praktis.</p>
+            <a href="materi.html" class="stretched-link">Buka Materi →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Contoh Implementasi</h5>
+            <p class="card-text">Topologi jaringan laboratorium, konfigurasi dasar router/switch, perintah umum (ping, ipconfig/ifconfig).</p>
+            <a href="materi.html#praktek" class="stretched-link">Lihat Praktik →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Keamanan Dasar</h5>
+            <p class="card-text">Firewall, VLAN, enkripsi, dan tips pengamanan jaringan sederhana untuk pemula.</p>
+            <a href="materi.html#keamanan" class="stretched-link">Pelajari Keamanan →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fitur grid -->
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h3 class="fw-bold">Kenapa belajar jaringan penting?</h3>
+        <p class="text-muted">Di era digital, hampir semua layanan membutuhkan jaringan. Memahami dasar jaringan membuka peluang di bidang IT — dari admin jaringan, cybersecurity, hingga cloud engineering.</p>
+        <ul>
+          <li>Dasar untuk troubleshooting & maintenance</li>
+          <li>Memahami infrastruktur perusahaan</li>
+          <li>Skills yang banyak dicari industri</li>
+        </ul>
+        <a class="btn btn-primary" href="materi.html">Mulai Sekarang</a>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="https://www.bhinneka.com/blog/wp-content/uploads/2022/10/Jenis-Jenis-Jaringan-Komputer.webp" 
+     alt="Gambar jaringan" 
+     class="img-fluid rounded shadow d-block mx-auto"
+     style="max-width: 300px; height: auto;">
+
+      </div>
+    </div>
+
+    <!-- footer callout -->
+    <div class="callout bg-light rounded p-4 mt-5 d-flex align-items-center">
+      <i class="bi bi-book-half display-6 text-primary me-3"></i>
+      <div>
+        <h5 class="mb-1">Sumber Belajar Tambahan</h5>
+        <p class="mb-0 text-muted">Setelah mempelajari materi ini, coba praktikkan di lingkungan lab virtual seperti Cisco Packet Tracer atau GNS3.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-primary text-white py-4 mt-5">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div>© 2025 EduNetwork • Jaringan Komputer Dasar</div>
+    <div>
+      <a href="tentang.html" class="text-white text-decoration-none me-3">Tentang</a>
+      <a href="kontak.html" class="text-white text-decoration-none">Kontak</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Small script for theme toggle -->
+<script>
+  const themeBtn = document.getElementById('themeToggle');
+  themeBtn.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark-theme');
+    themeBtn.querySelector('i').classList.toggle('bi-moon');
+    themeBtn.querySelector('i').classList.toggle('bi-sun');
+  });
+</script>
+
+</body>
+</html>
